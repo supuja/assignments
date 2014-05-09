@@ -1,7 +1,17 @@
-Suppose hash-keys are drawn from the population of all nonnegative integers that are multiples of some constant c, and hash function h(x) is x mod 15. For what values of c will h be a suitable hash function, i.e., a large random choice of hash-keys will be divided roughly equally into buckets? 
+Problem statement:
+Suppose hash-keys are drawn from the population of all nonnegative integers that are multiples of some constant c, and 
+hash function h(x) is x mod 15. For what values of c will h be a suitable hash function, i.e., a large random choice of
+hash-keys will be divided roughly equally into buckets? 
 
-Consider the hash function, h(x)=x mod 15. Since h(x) can give only values from 0 to 15, we can have only 15 buckets numbered from 0,1…...14. We have to choose “c” in such a way that all hash-keys are uniformly distributed into all buckets.
-Suppose c is taken as 2, then all the hash-keys will be distributed only in bucket numbered  0,2,4,6,8,10,12,14.Others buckets will be all empty. Same is the case with c=3,4…...etc. For a particular “c” only buckets which are multiple of it will be chosen always.
-If we chose “c” as 1,16,31……………...i.e  one more than multiple of bucketsize(here it is 15) then there is chance of hash-keys being divided roughly equally into all buckets.
+
+
+Consider the hash function, h(x)=x mod 15. Since h(x) can give only values from 0 to 15, we can have only 15 buckets
+numbered from 0,1…...14. We have to choose “c” in such a way that all hash-keys are uniformly distributed into all buckets.
+Suppose c is taken as 2, then all the hash-keys will be distributed only in bucket numbered  0,2,4,6,8,10,12,14.Others 
+buckets will be all empty. Same is the case with c=3,4…...etc. For a particular “c” only buckets which are multiple of it 
+will be chosen always.
+If we chose “c” as 1,16,31……………...i.e  one more than multiple of bucketsize(here it is 15) then there is chance of hash-keys 
+being divided roughly equally into all buckets.
   
-     Consider c as 1, then hash-keys will be 0,1,2,3,4………14.which will be hashed into buckets numbered 0,1,2,3…………….14 and again from 15,16…… same thing continues.
+     Consider c as 1, then hash-keys will be 0,1,2,3,4………14.which will be hashed into buckets numbered 0,1,2,3…………….14 
+     and again from 15,16…… same thing continues.
