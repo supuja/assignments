@@ -1,0 +1,8 @@
+1) You need to select an ad among number of advertisements depending on n
+keywords. What technique, and why, will you use to serve the request efficiently?
+
+Use of matching options with your keywords to help control which searches can trigger your ad.
+  Broad match: Results of the match include misspellings, synonyms, related searches,                         and other relevant variations.
+This is the default matching option. With broad match, your ad may show if a search term contains your keyword terms in any order, and possibly along with other terms. Your ads can also show for close variations of your keywords.
+Sticking with the broad match default is a great choice if you don't want to spend a lot of time building your keyword lists and want to capture the highest possible volume of ad traffic. You can use it with negative keywords  to avoid highly irrelevant traffic
+ 
